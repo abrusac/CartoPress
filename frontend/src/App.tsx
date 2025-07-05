@@ -1,36 +1,14 @@
-// MapCanvas.tsx – React komponenta s MapLibre kartom i SVG frameom
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Map from "./pages/Map";
 
-import MapCanvas from "./components/MapCanvas";
-
-
-function MyButton({ title }: { title: string }) {
+export default function App() {
   return (
-    <button>{title}</button>
+    <BrowserRouter>
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/map" element={<Map />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-export default function Map(): React.JSX.Element {
-  // Referenca na HTML element koji će sadržavati kartu
-
-
-
-
-  return (
-    <div className="w-screen h-screen flex flex-col">
-       <div>
-      <h1>Welcome to my apps</h1>
-      <MyButton title="I'm a button" />
-    </div>
-  
-      <div className="flex-1">
-        <MapCanvas />
-      </div>
-
-
-    </div>
-  );
-}
-
-
-
-
-

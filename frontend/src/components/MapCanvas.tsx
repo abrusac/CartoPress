@@ -9,11 +9,12 @@ function MapCanvas() {
     <Map
       mapboxAccessToken="pk.eyJ1IjoiYWJydXNhYyIsImEiOiJja2p5cTMxMnowMDFzMnFtZjA0aW12ajE4In0.h-Iany3pRtfayOuz910S8Q"
       initialViewState={{
-        longitude: -122.4,
-        latitude: 37.8,
-        zoom: 14
+        longitude: 16.4,
+        latitude: 45.8,
+        zoom: 4
       }}
-      style={{width: 600, height: 400}}
+      
+      style={{ width: '100vw', height: '100vh' }}
       mapStyle="mapbox://styles/abrusac/ckuvp1hd51lds18o6rs3szsie"
     />
   );
