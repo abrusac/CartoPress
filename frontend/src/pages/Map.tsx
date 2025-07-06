@@ -8,20 +8,17 @@ function MyButton({ title }: { title: string }) {
 
 export default function Map() {
   return (
-    <div className="relative w-screen h-screen flex flex-col overflow-hidden bg-gradient-to-b from-[#0B0F19] to-[#000] text-white">
-      {/* Radial background glow */}
-      <div className="absolute inset-0 -z-10 bg-gradient-radial at-top from-blue-600/30 via-transparent to-transparent" />
-
+    <div className="relative w-screen h-screen flex flex-col overflow-hidden bg-gradient-to-b from-[#05060a] to-transparent text-white">
       {/* Header */}
-      <header className="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
-        <h1 className="text-lg font-bold">🌍 World Map</h1>
-        <Link to="/">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full">Go back</button>
-        </Link>
-      </header>
 
       {/* Map canvas full screen behind header */}
       <main className="flex-1 w-full">
+      <header className="absolute z-1 bg-gradient-to-b from-[#05060a] to-[#0b1122 text-white flex justify-between items-center px-8 py-4 w-full  mx-auto">
+        <Link to="/">
+          <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full">Go back</button>
+        </Link>
+        <h2 className="font-bold">World Map Moon theme</h2>
+      </header>
          <MapCanvas /> 
       </main>
     </div>

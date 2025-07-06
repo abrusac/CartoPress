@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <div className="relative w-[100vw] h-[100vh] bg-gradient-to-b from-[#0B0F19] to-[#000] text-white">
+    <div className="relative w-[100vw] h-[100vh]  text-white">
       {/* Full-screen radial gradient background */}
-      <div className="bg-gradient-radial at-top from-blue-600/30 via-transparent to-transparent" />
+      <div className="" />
 
       {/* Header */}
       <header className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
         <div className="text-xl font-bold">CartoPress</div>
         <nav className="hidden md:flex space-x-8 text-white">
              <Link to="/">
-          <a href="#" className="hover:text-blue-400">Home</a>
+          <a href="#" className="hover:text-indigo-400">Home</a>
       </Link>
         <Link to="/map">
-         <a href="#" className="hover:text-blue-400">Map</a>
+         <a href="#" className="hover:text-indigo-400">Map</a>
       </Link>
          
         </nav>
         <Link to="/map">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full">Get started</button>
+        <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full">Get started</button>
       </Link>
        
       </header>
@@ -34,7 +34,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
              <Link to="/map">
- <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full">Explore</button>
+ <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full">Explore</button>
       </Link>
           
         </div>
